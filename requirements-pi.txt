@@ -1,0 +1,5 @@
+# Runtime only (Raspberry Pi 4/5, 64-bit Raspberry Pi OS, Python 3.10-3.12)
+executorch>=1.0
+torch
+numpy
+opencv-python-headless

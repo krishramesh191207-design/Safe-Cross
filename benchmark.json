@@ -1,0 +1,21 @@
+{
+  "device": "arm64 | macOS-27.2-arm64-arm-64bit",
+  "results": [
+    {
+      "model": "ssdlite_fp32.pte",
+      "size_mb": 13.79,
+      "mean_ms": 5.76,
+      "median_ms": 5.77,
+      "p95_ms": 6.04,
+      "fps": 173.5
+    },
+    {
+      "model": "ssdlite_int8.pte",
+      "size_mb": 3.86,
+      "mean_ms": 5.49,
+      "median_ms": 5.47,
+      "p95_ms": 5.88,
+      "fps": 182.3
+    }
+  ]
+}

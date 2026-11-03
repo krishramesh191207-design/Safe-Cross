@@ -1,0 +1,30 @@
+{
+  "model": "ssdlite_int8.pte",
+  "model_size_mb": 3.86,
+  "device": "AMD64 / Windows-10-10.0.26200-SP0",
+  "frames_processed": 11,
+  "conf_threshold": 0.4,
+  "totals_across_frames": {
+    "person": 13,
+    "bicycle": 1,
+    "car": 2,
+    "motorcycle": 0,
+    "bus": 2,
+    "truck": 0
+  },
+  "avg_pedestrians_per_frame": 1.18,
+  "avg_vehicles_per_frame": 0.45,
+  "peak_pedestrians": 3,
+  "peak_vehicles": 2,
+  "risk_frames": {
+    "LOW": 9,
+    "MEDIUM": 1,
+    "HIGH": 1
+  },
+  "avg_inference_ms": 37.08,
+  "p95_inference_ms": 39.37,
+  "avg_end_to_end_ms": 40.41,
+  "inference_fps": 26.97,
+  "end_to_end_fps": 24.75,
+  "model_load_ms": 38.9
+}

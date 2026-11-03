@@ -1,0 +1,10 @@
+# Laptop: model export + validation + docs
+executorch>=1.0
+torch
+torchvision
+torchao
+numpy
+opencv-python-headless
+python-docx
+python-pptx
+matplotlib

@@ -1,0 +1,30 @@
+{
+  "model": "ssdlite_int8.pte",
+  "model_size_mb": 3.86,
+  "device": "arm64 / macOS-27.2-arm64-arm-64bit",
+  "frames_processed": 11,
+  "conf_threshold": 0.4,
+  "totals_across_frames": {
+    "person": 12,
+    "bicycle": 1,
+    "car": 1,
+    "motorcycle": 0,
+    "bus": 2,
+    "truck": 1
+  },
+  "avg_pedestrians_per_frame": 1.09,
+  "avg_vehicles_per_frame": 0.45,
+  "peak_pedestrians": 3,
+  "peak_vehicles": 2,
+  "risk_frames": {
+    "LOW": 9,
+    "MEDIUM": 1,
+    "HIGH": 1
+  },
+  "avg_inference_ms": 5.48,
+  "p95_inference_ms": 5.86,
+  "avg_end_to_end_ms": 6.01,
+  "inference_fps": 182.58,
+  "end_to_end_fps": 166.47,
+  "model_load_ms": 7.8
+}
