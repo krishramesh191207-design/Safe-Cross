@@ -64,6 +64,17 @@ python build_docs.py --summary output_pi/summary.json --benchmark benchmark_pi.j
                      --annotated output_pi/annotated --device "Raspberry Pi 5 (8 GB)"
 ```
 
+## Pi day checklist
+
+```bash
+./setup_pi.sh && source .venv/bin/activate
+python tools/pi_smoke_test.py
+python run_safecross.py --input organiser_clip.mp4 --out output_pi
+python benchmark.py --out benchmark_pi.json
+python build_docs.py --summary output_pi/summary.json --benchmark benchmark_pi.json \
+                     --annotated output_pi/annotated --device "Raspberry Pi 5 (8 GB)"
+```
+
 ## Risk logic (per frame)
 
 - **Proximity pair**: a pedestrian box (enlarged 1.5×) overlaps a vehicle box.

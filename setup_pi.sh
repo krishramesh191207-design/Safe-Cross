@@ -5,8 +5,12 @@ sudo apt-get update
 sudo apt-get install -y python3-venv python3-dev libgl1 libglib2.0-0
 python3 -m venv .venv
 source .venv/bin/activate
-pip install --upgrade pip
-# CPU-only torch wheel for aarch64 (ExecuTorch's Python runtime depends on torch tensors)
-pip install torch --index-url https://download.pytorch.org/whl/cpu
-pip install executorch numpy opencv-python-headless
+if [ -d wheels ]; then
+    pip install --no-index --find-links wheels -r requirements-pi.txt
+else
+    pip install --upgrade pip
+    # CPU-only torch wheel for aarch64 (ExecuTorch's Python runtime depends on torch tensors)
+    pip install torch --index-url https://download.pytorch.org/whl/cpu
+    pip install executorch numpy opencv-python-headless
+fi
 python -c "from executorch.runtime import Runtime; print('ExecuTorch runtime OK')"

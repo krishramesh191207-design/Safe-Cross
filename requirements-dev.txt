@@ -1,10 +1,10 @@
 # Laptop: model export + validation + docs
-executorch>=1.0
-torch
+executorch==1.5.1
+torch==2.15.0
 torchvision
-torchao
-numpy
-opencv-python-headless
+torchao==0.18.0
+numpy==2.4.0
+opencv-python-headless==5.0.0.93
 python-docx
 python-pptx
 matplotlib
